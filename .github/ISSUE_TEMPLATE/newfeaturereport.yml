@@ -1,6 +1,6 @@
 ---
 name: NewFeatureReport
-about: Describe this issue template's purpose here.
+description: Describe this issue template's purpose here.
 title: 'Feature:'
 labels: ["feature", "triage"]
 projects: ["octo-org/1", "octo-org/44"]
