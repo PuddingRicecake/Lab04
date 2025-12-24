@@ -1,10 +1,54 @@
 ---
 name: NewFeatureReport
 about: Describe this issue template's purpose here.
-title: ''
+title: 'Feature:'
 labels: ''
 assignees: ''
 
+body:
+    - type: input
+      id: contact
+      attributes:
+        label: Contact Details
+        description: What is your name
+        placeholder: ex. Sertha Taweewattana
+      validations:
+        required: false
+
+    - type: markdown
+      attributes:
+        value: |
+                Thanks for taking the time to fill out this bug report!
+    
+    - type: dropdown
+      id: feature-type
+      attributes:
+        label: Type of request?
+        description: Select the type of your request
+        options:
+            - New Feature
+            - Upgrade Exist Feature
+        default: 0
+      validations:
+        required: false
+
+    - type: dropdown
+      id: feature-OS
+      attributes:
+        label: What is the OS which you want to suggest?
+        options:
+            - Window
+            - Mac OS
+            - Linux
+        default: 0
+      validations:
+        required: false
+
+    - type: textarea
+      id: details
+      attributes:
+        label: What are the details of your suggestion?
+        description: Explain what do you want
+        value: "Feature details!"
+        render: shell
 ---
-
-
